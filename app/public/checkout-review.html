@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Review order | Lagom Store</title>
+  <link rel="icon" href="favicon.svg" />
+  <link rel="stylesheet" href="styles.css" />
+  <script src="app.js" defer></script>
+</head>
+<body data-page="review">
+  <div id="topbar"></div>
+  <main>
+    <div class="steps"><span>1. Your details</span><span class="active">2. Review</span><span>3. Done</span></div>
+    <div class="layout-2">
+      <section class="panel" data-test="review-list"></section>
+      <aside class="panel">
+        <div class="alert alert-error" role="alert" data-test="error" hidden><span data-test="error-text"></span></div>
+        <div class="summary-row"><span>Ship to</span><span data-test="ship-to"></span></div>
+        <div class="summary-row"><span>Subtotal</span><span data-test="summary-subtotal"></span></div>
+        <div class="summary-row"><span>VAT (25%)</span><span data-test="summary-tax"></span></div>
+        <div class="summary-row total"><span>Total</span><span data-test="summary-total"></span></div>
+        <div class="summary-actions">
+          <button class="btn btn-primary" data-test="place-order">Place order</button>
+          <a class="btn btn-secondary" href="checkout.html" data-test="back">Back</a>
+        </div>
+      </aside>
+    </div>
+  </main>
+</body>
+</html>

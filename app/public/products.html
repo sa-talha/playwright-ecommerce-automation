@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Products | Lagom Store</title>
+  <link rel="icon" href="favicon.svg" />
+  <link rel="stylesheet" href="styles.css" />
+  <script src="app.js" defer></script>
+</head>
+<body data-page="products">
+  <div id="topbar"></div>
+  <main>
+    <div class="page-head">
+      <div>
+        <h1>All products</h1>
+        <p data-test="result-count">&nbsp;</p>
+      </div>
+      <div class="toolbar">
+        <input type="search" placeholder="Search products" aria-label="Search products" data-test="search" />
+        <select aria-label="Sort products" data-test="sort">
+          <option value="name-asc">Name (A to Z)</option>
+          <option value="name-desc">Name (Z to A)</option>
+          <option value="price-asc">Price (low to high)</option>
+          <option value="price-desc">Price (high to low)</option>
+        </select>
+      </div>
+    </div>
+    <section class="grid" data-test="product-grid" aria-live="polite"></section>
+  </main>
+</body>
+</html>

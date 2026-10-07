@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Log in | Lagom Store</title>
+  <link rel="icon" href="favicon.svg" />
+  <link rel="stylesheet" href="styles.css" />
+  <script src="app.js" defer></script>
+</head>
+<body data-page="login">
+  <div class="login-page">
+    <section class="login-hero">
+      <span class="brand"><span class="brand-mark">L</span>Lagom Store</span>
+      <div>
+        <h1>Not too much. Not too little. Just right.</h1>
+        <p>Simple Scandinavian things for the home. A demo shop built as the system under test for this Playwright project.</p>
+      </div>
+      <div class="hero-tiles" aria-hidden="true">
+        <img src="img/fika-mug.svg" alt="" /><img src="img/wool-throw.svg" alt="" /><img src="img/birch-desk-lamp.svg" alt="" />
+      </div>
+    </section>
+    <section class="login-panel">
+      <form class="login-card" id="login-form" novalidate>
+        <h2>Welcome back</h2>
+        <p class="sub">Log in to start shopping.</p>
+        <div class="alert alert-error" role="alert" data-test="error" hidden><span data-test="error-text"></span></div>
+        <div class="field">
+          <label for="username">Username</label>
+          <input id="username" name="username" autocomplete="username" data-test="username" />
+        </div>
+        <div class="field">
+          <label for="password">Password</label>
+          <input id="password" name="password" type="password" autocomplete="current-password" data-test="password" />
+        </div>
+        <button class="btn btn-primary btn-block" type="submit" data-test="login-button">Log in</button>
+        <div class="credentials" data-test="credentials">
+          Demo users: <code>standard_user</code>, <code>locked_user</code><br />
+          Password for all: <code>lagom2026</code>
+        </div>
+      </form>
+    </section>
+  </div>
+</body>
+</html>

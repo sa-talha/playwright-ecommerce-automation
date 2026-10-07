@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Your cart | Lagom Store</title>
+  <link rel="icon" href="favicon.svg" />
+  <link rel="stylesheet" href="styles.css" />
+  <script src="app.js" defer></script>
+</head>
+<body data-page="cart">
+  <div id="topbar"></div>
+  <main>
+    <div class="page-head"><div><h1>Your cart</h1></div></div>
+    <div class="layout-2">
+      <section data-test="cart-list"></section>
+      <aside class="panel" data-test="cart-summary" hidden>
+        <div class="summary-row total"><span>Subtotal</span><span data-test="cart-subtotal"></span></div>
+        <p class="greeting">VAT is added at checkout.</p>
+        <div class="summary-actions">
+          <a class="btn btn-primary" href="checkout.html" data-test="checkout">Checkout</a>
+          <a class="btn btn-secondary" href="products.html" data-test="continue-shopping">Continue shopping</a>
+        </div>
+      </aside>
+    </div>
+  </main>
+</body>
+</html>

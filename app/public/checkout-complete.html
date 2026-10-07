@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Order placed | Lagom Store</title>
+  <link rel="icon" href="favicon.svg" />
+  <link rel="stylesheet" href="styles.css" />
+  <script src="app.js" defer></script>
+</head>
+<body data-page="complete">
+  <div id="topbar"></div>
+  <main>
+    <section class="complete">
+      <div class="check"><svg width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="#2f5d50" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg></div>
+      <h1 data-test="complete-header">Tack! Your order is placed.</h1>
+      <p>We will pack it with care. Total paid: <strong data-test="order-total"></strong></p>
+      <div class="order-id">Order <span data-test="order-id"></span></div><br />
+      <a class="btn btn-primary" href="products.html" data-test="back-home">Back to products</a>
+    </section>
+  </main>
+</body>
+</html>
