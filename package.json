@@ -1,0 +1,28 @@
+{
+  "name": "playwright-ecommerce-automation",
+  "version": "1.0.0",
+  "description": "End-to-end, API and visual test automation for a demo web shop, built with Playwright and TypeScript.",
+  "private": true,
+  "author": "Talha Sajjad",
+  "license": "MIT",
+  "scripts": {
+    "start": "node app/server.js",
+    "test": "playwright test",
+    "test:chromium": "playwright test --project=setup --project=api --project=chromium --project=visual",
+    "test:smoke": "playwright test --grep @smoke",
+    "test:api": "playwright test --project=api",
+    "test:ui": "playwright test --ui",
+    "test:headed": "playwright test --project=setup --project=chromium --headed",
+    "report": "playwright show-report",
+    "record:demos": "playwright test --config=playwright.demo.config.ts && node scripts/make-gifs.mjs",
+    "typecheck": "tsc --noEmit"
+  },
+  "devDependencies": {
+    "@playwright/test": "1.56.1",
+    "@types/node": "^22.0.0",
+    "typescript": "^6.0.0"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}
